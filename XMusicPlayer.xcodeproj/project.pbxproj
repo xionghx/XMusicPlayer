@@ -15,6 +15,11 @@
 		0323D7D81D2229FE0096C43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0323D7D61D2229FE0096C43E /* LaunchScreen.storyboard */; };
 		0323D7E31D2229FE0096C43E /* XMusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323D7E21D2229FE0096C43E /* XMusicPlayerTests.swift */; };
 		0323D7EE1D2229FE0096C43E /* XMusicPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323D7ED1D2229FE0096C43E /* XMusicPlayerUITests.swift */; };
+		0323D83E1D2250D90096C43E /* XNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323D83D1D2250D90096C43E /* XNetworkingService.swift */; };
+		0323D8401D2255270096C43E /* XSongInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323D83F1D2255270096C43E /* XSongInfoController.swift */; };
+		0323D8441D2255B40096C43E /* XDownloadMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323D8431D2255B40096C43E /* XDownloadMusicListViewController.swift */; };
+		0323D8481D22564E0096C43E /* XOnlineMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323D8471D22564E0096C43E /* XOnlineMusicListViewController.swift */; };
+		0323D84A1D225AEE0096C43E /* SongInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323D8491D225AEE0096C43E /* SongInfoModel.swift */; };
 		2A75D7A0A4DEC545AE458E49 /* Pods_XMusicPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F0E551CA4AB7B2CF2A7100 /* Pods_XMusicPlayerTests.framework */; };
 		6B52625E5878CE9D9CC04636 /* Pods_XMusicPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B018566C0980BDE5E41178DF /* Pods_XMusicPlayer.framework */; };
 		E2A3746071E6B2AB976EF7B7 /* Pods_XMusicPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1E59E21951E426CB9852CE /* Pods_XMusicPlayerUITests.framework */; };
@@ -52,6 +57,11 @@
 		0323D7E91D2229FE0096C43E /* XMusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0323D7ED1D2229FE0096C43E /* XMusicPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMusicPlayerUITests.swift; sourceTree = "<group>"; };
 		0323D7EF1D2229FE0096C43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0323D83D1D2250D90096C43E /* XNetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNetworkingService.swift; sourceTree = "<group>"; };
+		0323D83F1D2255270096C43E /* XSongInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSongInfoController.swift; sourceTree = "<group>"; };
+		0323D8431D2255B40096C43E /* XDownloadMusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDownloadMusicListViewController.swift; sourceTree = "<group>"; };
+		0323D8471D22564E0096C43E /* XOnlineMusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XOnlineMusicListViewController.swift; sourceTree = "<group>"; };
+		0323D8491D225AEE0096C43E /* SongInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongInfoModel.swift; sourceTree = "<group>"; };
 		14AC8215D52C6279BEA2038E /* Pods-XMusicPlayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMusicPlayerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMusicPlayerUITests/Pods-XMusicPlayerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92398968BF4A29F5CBC0E0F1 /* Pods-XMusicPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMusicPlayerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMusicPlayerTests/Pods-XMusicPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
 		97F0E551CA4AB7B2CF2A7100 /* Pods_XMusicPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMusicPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +133,11 @@
 				0323D7D61D2229FE0096C43E /* LaunchScreen.storyboard */,
 				0323D7D91D2229FE0096C43E /* Info.plist */,
 				0323D7D11D2229FE0096C43E /* XMusicPlayer.xcdatamodeld */,
+				0323D83D1D2250D90096C43E /* XNetworkingService.swift */,
+				0323D83F1D2255270096C43E /* XSongInfoController.swift */,
+				0323D8471D22564E0096C43E /* XOnlineMusicListViewController.swift */,
+				0323D8431D2255B40096C43E /* XDownloadMusicListViewController.swift */,
+				0323D8491D225AEE0096C43E /* SongInfoModel.swift */,
 			);
 			path = XMusicPlayer;
 			sourceTree = "<group>";
@@ -433,7 +448,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0323D8401D2255270096C43E /* XSongInfoController.swift in Sources */,
+				0323D8441D2255B40096C43E /* XDownloadMusicListViewController.swift in Sources */,
+				0323D84A1D225AEE0096C43E /* SongInfoModel.swift in Sources */,
+				0323D83E1D2250D90096C43E /* XNetworkingService.swift in Sources */,
 				0323D7CD1D2229FE0096C43E /* ViewController.swift in Sources */,
+				0323D8481D22564E0096C43E /* XOnlineMusicListViewController.swift in Sources */,
 				0323D7D31D2229FE0096C43E /* XMusicPlayer.xcdatamodeld in Sources */,
 				0323D7CB1D2229FE0096C43E /* AppDelegate.swift in Sources */,
 			);
