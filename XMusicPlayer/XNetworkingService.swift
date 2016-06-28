@@ -20,6 +20,7 @@ var currentTime : String {
 get{
     let dateFormatter = NSDateFormatter()
     dateFormatter.dateFormat = "yyyyMMddHHmmss"
+//    print(dateFormatter.stringFromDate(NSDate()))
     return dateFormatter.stringFromDate(NSDate())
 }
 }
@@ -28,7 +29,18 @@ typealias RequestCompleteHandle = (jsonData:[JSON]?,error:NSError?)->Void
 
 class XNetworkingService {
     class func getOnlineMusicInfo(url: String!,completeHandel:RequestCompleteHandle) {
-        
+        let ecodeUrl = url.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+        let session = NSURLSession.sharedSession()
+        session.dataTaskWithURL(NSURL(string: ecodeUrl!)!) { (data, response, error) in
+            print(data)
+            let json = JSON(data: data!)["showapi_res_body"]["pagebean"]["contentlist"].array
+           
+            print(json)
+            //执行闭包
+            completeHandel(jsonData: json, error: error)
+            
+            }.resume()
+
     
     }
 }

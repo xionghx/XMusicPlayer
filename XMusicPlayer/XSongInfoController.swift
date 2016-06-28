@@ -14,14 +14,13 @@ class XSongInfoController {
     
     class func getSongModelWithName(name:String, completeHandle:ConverModelCompleteHandle) {
         let url = "\(topSongSearchApi)?keyword=\(name)&page=1&showapi_appid=\(showapi_appid)&showapi_timestamp=\(currentTime)&showapi_sign=\(showapi_sign)"
+        print(url)                                  //执行getOnline..方法,并传入闭包类型的参数
         XNetworkingService.getOnlineMusicInfo(url) { (jsonData, error) in
-            
             
             if let getJsonData = jsonData {
                 let jsonModels = self.conertJsonToSongModel(getJsonData)
-                //执行闭包
+                //执行getSongModelWithName方法中传入的闭包
                 completeHandle(songModel: jsonModels!, error: error)
-                
             }
         }
         
