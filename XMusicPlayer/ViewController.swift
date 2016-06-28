@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-
+    override func collapseSecondaryViewController(secondaryViewController: UIViewController, forSplitViewController splitViewController: UISplitViewController) {
+        <#code#>
+    }
 }
 
